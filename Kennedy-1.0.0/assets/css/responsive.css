@@ -1,0 +1,91 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* ===== TABLETS (Max width: 992px) ===== */
+@media (max-width: 992px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+
+  .hero-img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero-img img {
+    width: 250px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills-grid,
+  .project-grid,
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* ===== MOBILE DEVICES (Max width: 600px) ===== */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #hero {
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .skills-grid,
+  .project-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+
+  .btn, .btn-outline {
+    padding: 8px 18px;
+  }
+}
+
+/* ===== EXTRA SMALL SCREENS (Max width: 400px) ===== */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+}

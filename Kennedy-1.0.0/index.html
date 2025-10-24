@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kennedy Nwachukwu | Cloud & DevOps Engineer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Kennedy<span class="dot">.</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- ===== THEME TOGGLE BUTTON ===== -->
+    <div class="theme-toggle">
+      <i id="theme-icon" class="sun">☀️</i>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Kennedy Nwachukwu</span></h2>
+        <h3>Cloud & DevOps Engineer</h3>
+        <p>
+          I build and automate cloud infrastructure using AWS, Docker, Kubernetes,
+          Terraform, and CI/CD pipelines — ensuring scalable and secure deployments.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn-outline">Let's Connect</a>
+        </div>
+
+        <!-- ===== SOCIAL LINKS UNDER HERO ===== -->
+        <div class="social-hero">
+          <a href="https://www.linkedin.com/in/kennedy-nwachukwu" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/kennedy-nwachukwu" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:kennedy.nwachukwu@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="images/profile/profile.png" alt="Kennedy Nwachukwu profile photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate DevOps Engineer with hands-on experience in automating
+        deployments, containerizing applications, and managing cloud environments.
+        I’ve worked on projects integrating AWS services, Docker, ECR, EC2, Portainer,
+        and HAProxy for high-availability infrastructure setups.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">AWS (EC2, S3, VPC, IAM)</div>
+        <div class="skill">Docker & Kubernetes</div>
+        <div class="skill">Terraform & Ansible</div>
+        <div class="skill">CI/CD (GitHub Actions)</div>
+        <div class="skill">HAProxy & Nginx</div>
+        <div class="skill">Monitoring (Grafana, CloudWatch)</div>
+        <div class="skill">Linux Administration</div>
+        <div class="skill">Networking & Load Balancing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/projects/medplus.png" alt="Medplus DevOps Project" />
+          <h3>Medplus Cloud Deployment</h3>
+          <p>
+            Containerized a healthcare app with Docker, pushed images to AWS ECR,
+            deployed on EC2 via Portainer, and configured HAProxy with SSL.
+          </p>
+          <a href="https://shorturl.at/CgQdW" class="btn-outline">View Project</a>
+        </div>
+
+        <div class="project-card">
+  <img src="images/projects/datadog-monitoring.png" alt="System Administration Monitoring and Alerting Project" />
+  <h3>System Administration: Monitoring & Alerting with Datadog</h3>
+  <p>
+    Implemented a real-time monitoring and alerting system using Datadog to track server performance, 
+    container health, and network activity. Configured dashboards, alerts, and logs integration for 
+    proactive incident detection across cloud and on-premise environments.
+  </p>
+  <a href="#" class="btn-outline">View Project</a>
+</div>
+
+
+                <!-- VPC PROJECT -->
+        <div class="project-card">
+          <img src="images/projects/vpc-architecture.png" alt="AWS VPC Project" />
+          <h3>AWS VPC Infrastructure Project</h3>
+          <p>
+            Designed and deployed a secure, scalable AWS Virtual Private Cloud (VPC)
+            architecture with public and private subnets, Internet Gateway, NAT Gateway,
+            and route tables for multi-tier application hosting. Implemented network 
+            segregation, security groups, and NACLs for controlled traffic flow.
+          </p>
+          <a href="https://shorturl.at/QfEvw" class="btn-outline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p>Have a project, collaboration, or role opportunity? Let’s talk!</p>
+      <form action="https://formspree.io/f/xgvnqlnr" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Kennedy Nwachukwu | Cloud & DevOps Engineer</p>
+
+    <div class="social-links">
+      <a href="linkedin.com/in/kennedy-nwachukwu-601466170/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Kenny2113" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:kennedynwachukwu@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
